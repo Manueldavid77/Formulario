@@ -1,3 +1,3 @@
 # Formulario
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-qevunk)
+Realizando formulario de registro para pagina web
