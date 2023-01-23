@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 
-*{
-  font-family: "Ubuntu", sans-serif;
+* {
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 35px;
+  width: 450px;
+  margin: auto;
 }
 
-.botones{
+.botones {
   align-self: flex-start;
   display: flex;
   gap: 20px;
 }
 
-.google-btn{
+.google-btn {
   background-color: #1a73eb;
   color: white;
   border: none;
@@ -30,12 +32,11 @@
   cursor: pointer;
 }
 
-.google-btn:hover{
+.google-btn:hover {
   opacity: 0.75;
-  
 }
 
-.google-btn picture{
+.google-btn picture {
   width: 30px;
   height: 30px;
   background-color: white;
@@ -45,26 +46,124 @@
   justify-content: center;
 }
 
-.google-btn picture img{
+.google-btn picture img {
   width: 75%;
 }
 
-.google-btn span{
+.google-btn span {
   color: white;
   font-weight: 500;
   padding: 15px;
-
 }
 
-.twitter-btn{
+.twitter-btn {
   color: #bbb;
   background-color: #eee;
-  border:none;
+  border: none;
   width: 40px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.twitter-btn:hover{
+.twitter-btn:hover {
   background-color: #ddd;
+}
+
+.separador {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+}
+
+.separador hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.separador span {
+  color: #8b8b8b;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label span {
+  font-weight: 700;
+}
+
+.inputs label input {
+  width: 70%;
+  background-color: #f3f3f4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14pt;
+}
+
+label input {
+  width: 100%;
+  background-color: #f3f3f4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14pt;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover {
+  background-color: whitesmoke;
+  border: solid 1px white;
+  box-shadow: 0 0 4px #eb50ff4f;
+}
+
+label input:focus {
+  background-color: whitesmoke;
+  border: solid 1px white;
+  box-shadow: 0 0 4px #eb50ff4f;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox input [type='checkbox'] {
+  width: 20px;
+}
+
+.checkbox span {
+  font-weight: 400;
+}
+
+.enviar {
+  background-color: hotpink;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 14pt;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  opacity: 0.75;
 }
