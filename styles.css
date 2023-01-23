@@ -4,14 +4,19 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+body{
+  background-color: #161717;
+  color: white;
+}
+
 .container {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 35px;
-  width: 450px;
-  margin: auto;
+  gap: 30px;
+  width: 450px; 
 }
 
 .botones {
@@ -21,8 +26,7 @@
 }
 
 .google-btn {
-  background-color: #1a73eb;
-  color: white;
+  background-color: #1a73e8;
   border: none;
   border-radius: 5px;
   height: 40px;
@@ -90,12 +94,14 @@
   gap: 10px;
   width: 100%;
 }
+
 form {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   gap: 20px;
 }
+
 label {
   display: flex;
   flex-direction: column;
@@ -108,34 +114,36 @@ label span {
 
 .inputs label input {
   width: 70%;
-  background-color: #f3f3f4;
-  border: none;
+  background-color: #212121;
+  border: solid 1px transparent;
   padding: 10px 20px;
   border-radius: 10px;
   outline: none;
   font-size: 14pt;
+  color: white;
 }
 
 label input {
-  width: 100%;
-  background-color: #f3f3f4;
-  border: none;
+  width: 90%;
+  background-color: #212121;
+  border: solid 1px transparent;
   padding: 10px 20px;
   border-radius: 10px;
   outline: none;
   font-size: 14pt;
   transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+  color: white;
 }
 
 label input:hover {
-  background-color: whitesmoke;
-  border: solid 1px white;
+  background-color: #454045;
+  border: solid 1px #212121;
   box-shadow: 0 0 4px #eb50ff4f;
 }
 
 label input:focus {
-  background-color: whitesmoke;
-  border: solid 1px white;
+  background-color: #454540;
+  border: solid 1px #212121;
   box-shadow: 0 0 4px #eb50ff4f;
 }
 
@@ -144,7 +152,7 @@ label input:focus {
   flex-direction: row;
 }
 
-.checkbox input [type='checkbox'] {
+.checkbox input [type="checkbox"] {
   width: 20px;
 }
 
@@ -153,8 +161,8 @@ label input:focus {
 }
 
 .enviar {
-  background-color: hotpink;
-  color: whitesmoke;
+  background-color: #ea4c89;
+  color: white;
   font-weight: 500;
   font-size: 14pt;
   text-align: center;
